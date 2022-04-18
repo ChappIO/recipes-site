@@ -60,6 +60,57 @@ footer {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
+
+  &.text {
+    max-width: 700px;
+
+    img {
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+
+    .segment {
+      $segment-radius: 0.2rem;
+      border-radius: $segment-radius;
+      padding: 0.5rem 1rem;
+      margin-bottom: 2rem;
+      overflow: visible;
+      background-color: white;
+
+      // This is purely decorative so leave it out for prints
+      @media screen {
+        box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+
+        &.stack {
+          position: relative;
+
+          &:before, &:after {
+            border-radius: $segment-radius;
+            background-color: #fff;
+            visibility: visible;
+            content: '';
+            display: block;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            border: 1px solid rgba(34, 36, 38, .15);
+            top: 0;
+          }
+
+          &:before {
+            transform: rotate(-1.2deg);
+            z-index: -1;
+          }
+
+          &:after {
+            transform: rotate(1.2deg);
+            z-index: -2;
+          }
+        }
+      }
+    }
+  }
 }
 
 .cards {

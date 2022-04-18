@@ -97,7 +97,7 @@ of hij zal niet mooi rond worden.
 De baktijd is afhankelijk van je oven. Meestal een minuut of 10 tot 15 voor een thuis oven. Waar je naar kijkt zijn
 kleine zwarte plekjes op de bovenkant van de pizza. Je zal er een paar moeten proberen voordat je je oven leert kennen.
 
-## Stap 5: Afmaken
+## Stap 5: Serveren
 
 En nu doe je je toppings er op die je niet wil bakken: basilicum, een snuje zout, olijfolie, chillis.
 Lekker experimenteren!

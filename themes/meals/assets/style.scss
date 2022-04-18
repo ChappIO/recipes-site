@@ -50,7 +50,31 @@ header {
 }
 
 main {
+  padding: 2rem 0;
   flex-grow: 1;
+}
+
+/* Styling for recipe pdf prints */
+@media print {
+  :root {
+    font-size: 11px;
+  }
+
+  header, footer {
+    display: none;
+  }
+
+  .segment {
+    border: none;
+  }
+
+  .text {
+    img {
+      float: right;
+      width: 50% !important;
+      margin: 1rem;
+    }
+  }
 }
 
 footer {
@@ -87,17 +111,6 @@ footer {
     img {
       width: 100%;
       border-radius: 0.5rem;
-    }
-
-    @media print {
-      h1, h2 {
-        break-before: auto;
-      }
-
-      p {
-        break-inside: avoid;
-        break-after: avoid;
-      }
     }
 
     .segment {

@@ -7,12 +7,10 @@
 
         <div style="clear: both"></div>
 
-        <span class="ui featured rounded image">
-        {{ $img := (.Resources.ByType "image").GetMatch "images/*featured*" }}
-        {{ with $img }}
+            {{ $img := (.Resources.ByType "image").GetMatch "images/*featured*" }}
+            {{ with $img }}
             <img src="{{ .Permalink }}" alt="{{ $.Title }}" style="margin-top: 1.5em">
-        {{ end }}
-    </span>
+            {{ end }}
 
         <h1>Ingrediënten</h1>
 

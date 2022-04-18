@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="ui container">
+    <div class="ui cards">
+        {{ with .Site.GetPage "/recepten"}}
+        {{ range .Pages }}
+        <a href="{{ .RelPermalink | absURL }}" class="card">
+            <span class="image">
+                {{ $img := (.Resources.ByType "image").GetMatch "images/*featured*" }}
+                {{ with $img }}
+                    <img src="{{ .Permalink }}" alt="{{ $.Title }}">
+                {{ end }}
+            </span>
+            <span class="content">
+                <div class="header">{{ .Title }}</div>
+                <div class="meta">
+                    {{ with .Params.topics }}{{ range . }}<span>{{ . }}</span>{{ end }}{{ end }}
+                </div>
+                <div class="description">
+                    {{ .Description }}
+                </div>
+            </span>
+        </a>
+    </div>
+    {{ end }}
+    {{ end }}
+</div>
+</div>
+{{ end }}

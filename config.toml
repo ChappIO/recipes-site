@@ -1,0 +1,4 @@
+baseURL = 'http://meals.services.chapp.io'
+languageCode = 'nl-nl'
+title = 'Eten bij Thomas'
+theme = 'meals'

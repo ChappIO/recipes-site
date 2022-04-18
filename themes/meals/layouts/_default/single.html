@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="ui text container">
+    <h1>{{ .Title }}</h1>
+
+    {{ .Description }}
+
+    <div style="clear: both"/>
+
+    <span class="ui featured rounded image" style="margin-top: 1.5em">
+        {{ $img := (.Resources.ByType "image").GetMatch "images/*featured*" }}
+        {{ with $img }}
+            <img src="{{ .Permalink }}" alt="{{ $.Title }}">
+        {{ end }}
+    </span>
+
+    {{ .Content }}
+
+</div>
+{{ end }}

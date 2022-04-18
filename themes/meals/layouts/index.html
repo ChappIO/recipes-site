@@ -1,15 +1,13 @@
 {{ define "main" }}
-<div class="ui container">
-    <div class="ui stackable cards">
+<div class="container">
+    <div class="cards">
         {{ with .Site.GetPage "/recepten"}}
         {{ range .Pages }}
         <a href="{{ .RelPermalink | absURL }}" class="card">
-            <span class="image" >
-                {{ $img := (.Resources.ByType "image").GetMatch "images/*featured*" }}
-                {{ with $img }}
-                    <img style="height: 160px; object-fit: cover" src="{{ .Permalink }}" alt="{{ $.Title }}">
-                {{ end }}
-            </span>
+            {{ $img := (.Resources.ByType "image").GetMatch "images/*featured*" }}
+            {{ with $img }}
+            <img style="height: 160px; object-fit: cover" src="{{ .Permalink }}" alt="{{ $.Title }}">
+            {{ end }}
             <span class="content">
                 <div class="header">{{ .Title }}</div>
                 <div class="meta">
@@ -20,8 +18,8 @@
                 </div>
             </span>
         </a>
-    {{ end }}
-    {{ end }}
-</div>
+        {{ end }}
+        {{ end }}
+    </div>
 </div>
 {{ end }}

@@ -1,21 +1,17 @@
 ---
 title: Pizza
-date: 2022-04-18T08:49:20+02:00
-draft: false
 topics: 
   - Bakken
   - Italiaans
 description: >
     Pizza maken is niet moeilijk, je moet alleen even handigheid krijgen in het maken van de deeg en het in de oven krijgen
     van de ongebakken pizza.
+ingredients:
+  - Meel Typo 00 (500 gram)
+  - Zout (5 gram)
+  - Water (325 ml)
+  - Gedroogd gist (3 gram)
 ---
-
-# Ingredienten
-
-- Meel: Typo 00 (500 gram)
-- Zout (5 gram)
-- Water (325 ml)
-- Gedroogd gist (3 gram)
 
 # Bereiding
 

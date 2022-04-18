@@ -1,19 +1,33 @@
 {{ define "main" }}
 <div class="ui text container">
-    <h1>{{ .Title }}</h1>
+    <div class="ui piled top attached  segment">
+        <h1>{{ .Title }}</h1>
 
-    {{ .Description }}
+        {{ .Description }}
 
-    <div style="clear: both"/>
+        <div style="clear: both"></div>
 
-    <span class="ui featured rounded image" style="margin-top: 1.5em">
+        <span class="ui featured rounded image">
         {{ $img := (.Resources.ByType "image").GetMatch "images/*featured*" }}
         {{ with $img }}
-            <img src="{{ .Permalink }}" alt="{{ $.Title }}">
+            <img src="{{ .Permalink }}" alt="{{ $.Title }}" style="margin-top: 1.5em">
         {{ end }}
     </span>
 
-    {{ .Content }}
+        <h1>Ingrediënten</h1>
+
+        <ul>
+            {{ range .Params.ingredients }}
+            <li>{{ . }}</li>
+            {{ end }}
+        </ul>
+        <div style="clear: both"></div>
+    </div>
+
+
+    <div class="ui  bottom attached segment">
+        {{ .Content }}
+    </div>
 
 </div>
 {{ end }}

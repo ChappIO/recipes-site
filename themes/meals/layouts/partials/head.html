@@ -12,14 +12,36 @@
     <title>{{ $title }}</title>
 
     <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+        /* Styling for recipe pdf prints */
         @media print {
+            :root {
+                font-size: 11px;
+            }
+
             .menu {
                 display: none !important;
             }
+
             .ui.featured.image {
                 float: right;
                 width: 50%;
                 margin-top: 0 !important;
+            }
+
+            .ui.segment {
+                border: none !important;
+            }
+        }
+
+        /* Some semantic UI fixes */
+        /* On mobile, the padding on stackable link cards aren't okay. This is the fix. */
+        @media only screen and (max-width: 767px) {
+            .ui.stackable.cards > a.card {
+                display: flex !important;
             }
         }
     </style>

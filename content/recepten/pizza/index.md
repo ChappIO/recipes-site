@@ -72,8 +72,10 @@ Laat de deegbollen rijzen voor ongeveer 4 tot 5 uur onder verhoudfolie.
 
 Verwarm een pizzasteen in de oven zo heet mogelijk. (Op zijn minst 30 min heet laten worden).
 
+{{< tip >}}
 Zet al je toppings klaar. Zodra je straks de saus op de deeg legt gaat de tijdbom aan en moet je zo snel mogelijk de
 oven in.
+{{< /tip >}}
 
 Bedek de pizzaschep met een laag meel om hem te "smeren". Druk vervolgens een deegbool plat vanuit het midden tot een
 ronde pizza. Laat hierbij de rand met rust zodat er een soort dunne band ontstaat rond je pizza. Deze rand wordt lekker

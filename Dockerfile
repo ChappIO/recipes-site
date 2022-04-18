@@ -1,1 +1,3 @@
-FROM klakegg/hugo:
+FROM nginx
+
+ADD ./public /usr/share/nginx/html

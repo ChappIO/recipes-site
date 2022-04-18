@@ -1,0 +1,4 @@
+<div class="admonition tip">
+    <span class="title"><i class="fa-solid fa-thumbs-up"></i> <span>{{ .Get "title" | default "Tip!" }}</span></span>
+    <div class="content">{{ printf "%s" .Inner | markdownify }}</div>
+</div>

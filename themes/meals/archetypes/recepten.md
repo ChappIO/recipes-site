@@ -3,7 +3,7 @@ title: "{{ replace .Name "-" " " | title }}"
 topics:
   - Bakken
   - Italiaans 
-description: >
+description: |
     Hier een mooie omschrijving
 ingredients:
     - 

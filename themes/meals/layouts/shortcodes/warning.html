@@ -1,0 +1,4 @@
+<div class="admonition warning">
+    <span class="title"><i class="fa-solid fa-exclamation-triangle"></i> <span>{{ .Get "title" | default "LET OP!" }}</span></span>
+    <div class="content">{{ printf "%s" .Inner | markdownify }}</div>
+</div>

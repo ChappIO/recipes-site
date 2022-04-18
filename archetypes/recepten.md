@@ -1,10 +1,12 @@
 ---
-title: {{ replace .Name "-" " " | title }} topics:
-
-- Bakken
-- Italiaans description: >
-  Hier een mooie omschrijving ingredients:
-    -
+title: "{{ replace .Name "-" " " | title }}"
+topics:
+  - Bakken
+  - Italiaans 
+description: >
+    Hier een mooie omschrijving
+ingredients:
+    - 
 
 ---
 

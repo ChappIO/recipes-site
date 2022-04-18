@@ -6,10 +6,6 @@ header, footer {
   background-color: #1b1c1d;
 }
 
-
-body {
-}
-
 header {
   .container {
     display: flex;
@@ -31,6 +27,25 @@ header {
         background-color: #4b4d4e;
       }
     }
+  }
+}
+
+@mixin panelled {
+  border: none;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #bcbdbd, 0 0 0 1px #d4d4d5;
+}
+
+@mixin panelled-hover {
+  @include panelled;
+
+  cursor: pointer;
+  transform: translateY(0);
+  transition-duration: 0.2s;
+  transition-property: transform, box-shadow;
+  &:hover {
+    box-shadow: 0 1px 3px 0 #bcbdbd, 0 0 0 1px #d4d4d5;
+    transform: translateY(-3px);
   }
 }
 
@@ -75,11 +90,10 @@ footer {
       padding: 0.5rem 1rem;
       margin-bottom: 2rem;
       overflow: visible;
-      background-color: white;
 
       // This is purely decorative so leave it out for prints
       @media screen {
-        box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+        @include panelled;
 
         &.stack {
           position: relative;
@@ -123,10 +137,11 @@ footer {
   .card {
     background-color: white;
     border-radius: $card-radius;
-    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
-    transform: translateY(0);
-    transition-duration: 0.3s;
-    transition-property: transform;
+    @include panelled-hover;
+
+    &:hover {
+      text-decoration: none;
+    }
 
     img {
       border-top-right-radius: $card-radius;
@@ -134,12 +149,6 @@ footer {
       width: 100%;
       height: 120px;
       object-fit: cover;
-    }
-
-    &:hover {
-      box-shadow: 0 1px 3px 0 #bcbdbd, 0 0 0 1px #d4d4d5;
-      transform: translateY(-3px);
-      text-decoration: none;
     }
 
     .content {
@@ -156,7 +165,7 @@ footer {
         margin-bottom: 0.5rem;
 
         span:not(:first-child) {
-          margin-left: 0.5rem;
+          margin-left: 0.3rem;
         }
       }
 
@@ -164,5 +173,23 @@ footer {
         font-size: 0.9rem;
       }
     }
+  }
+}
+
+.share.buttons {
+  margin-bottom: 2rem;
+
+  @media print {
+    display: none;
+  }
+}
+
+button {
+  @include panelled-hover;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+
+  span {
+    font-weight: bold;
   }
 }

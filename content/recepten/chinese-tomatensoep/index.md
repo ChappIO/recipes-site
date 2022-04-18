@@ -2,7 +2,8 @@
 title: "Chinese Tomatensoep"
 topics:
   - Soep
-  - Voorraad
+  - Vriezer
+  - Aziatisch
 description: Een zoet-pittige soep die je makkelijk in kan vriezen voor later. 
 ingredients:
   - Olijfolie

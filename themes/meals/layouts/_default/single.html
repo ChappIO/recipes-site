@@ -24,6 +24,15 @@
         <div style="clear: both"></div>
     </div>
 
+    <div class="share buttons">
+        <button onclick="window.print()">
+            <i class="fas fa-print"></i> <span>Print/PDF</span>
+        </button>
+        <button class="share button" onclick="navigator.share({url: window.location})">
+            <i class="fas fa-share-from-square"></i> <span>Share</span>
+        </button>
+    </div>
+
 
     <div class="segment">
         {{ .Content }}

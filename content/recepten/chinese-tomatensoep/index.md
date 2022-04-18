@@ -40,6 +40,6 @@ Voeg de smaakpasta uit de kom en de gezeefde tomaten toe aan de pan. Kook voor n
 
 Voeg 15 minuten voor het serveren de mihoen toe aan de pan.
 
-# Tip
-
+{{< tip >}}
 Lekker met een afbak knoflookbroodje uit de oven.
+{{< /tip >}}

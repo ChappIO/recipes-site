@@ -117,12 +117,13 @@ footer {
       $segment-radius: 0.2rem;
       border-radius: $segment-radius;
       padding: 0.5rem 1rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       overflow: visible;
 
       // This is purely decorative so leave it out for prints
       @media screen {
         @include panelled;
+        margin-bottom: 1.3rem;
 
         &.stack {
           position: relative;
@@ -206,7 +207,7 @@ footer {
 }
 
 .share.buttons {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 
   @media print {
     display: none;
@@ -227,6 +228,7 @@ button {
   box-shadow: 6px 6px 5px 0 #d4d4d5;
   border-radius: 0.2rem;
   border-left: 4px solid;
+  margin-bottom: 1rem;
 
   .title {
     padding: 1rem;

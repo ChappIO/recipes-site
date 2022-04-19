@@ -22,7 +22,7 @@ ingredients:
   - Parmezaanse kaas (400 gram)
   - Nootmuskaat (kwart noot)
   - Lasagnebladen (2 pakjes)
-  - Mozzarolella (2 bollen)
+  - Mozzarella (2 bollen)
 
 ---
 

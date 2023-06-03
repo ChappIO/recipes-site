@@ -59,14 +59,14 @@ vijand van gist. Voeg de gist toe en laat het water langzaam bij de mix lopen.
 
 Kneed het deeg op een hogere snelheid (mijn bosch machine stand 2) voor ongeveer 15 minuten.
 
-Laat het deeg in de kom rusten voor 30 minuten met een vochtige theedoek of verhoudfolie er over.
+Laat het deeg in de kom rusten voor 30 minuten met een vochtige theedoek of vershoudfolie er over.
 
 ## Stap 2: Deegballen
 
 Verdeel in bollen van 200 tot 250 gram. Vorm de bollen door de deeg over zichzelf heen de vouwen en de naad aan de
 onderkant dicht te masseren.
 
-Laat de deegbollen rijzen voor ongeveer 4 tot 5 uur onder verhoudfolie.
+Laat de deegbollen rijzen voor ongeveer 4 tot 5 uur onder vershoudfolie.
 
 ## Stap 3: Pizza!
 
